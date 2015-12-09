@@ -68,8 +68,12 @@ $string['coursetimereq'] = 'Required minutes in course';
 $string['coursetimereq_help'] = 'Enter here the minimum amount of time, in minutes, that a student must be logged into the course before they will be able to receive the certificate.';
 $string['credithours'] = 'Credit Hours';
 $string['customtext'] = 'Custom Text';
-$string['customtext_help'] = 'If you want the certificate to print different names for the teacher than those who are assigned
-the role of teacher, do not select Print Teacher or any signature image except for the line image.  Enter the teacher names in this text box as you would like them to appear.  By default, this text is placed in the lower left of the certificate. The following html tags are available: &lt;br&gt;, &lt;p&gt;, &lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;img&gt; (src and width (or height) are mandatory), &lt;a&gt; (href is mandatory), &lt;font&gt; (possible attributes are: color, (hex color code), face, (arial, times, courier, helvetica, symbol)).';
+// START UCLA MOD: CCLE-5557 - Replace usage of teacher
+//$string['customtext_help'] = 'If you want the certificate to print different names for the teacher than those who are assigned
+//the role of teacher, do not select Print Teacher or any signature image except for the line image.  Enter the teacher names in this text box as you would like them to appear.  By default, this text is placed in the lower left of the certificate. The following html tags are available: &lt;br&gt;, &lt;p&gt;, &lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;img&gt; (src and width (or height) are mandatory), &lt;a&gt; (href is mandatory), &lt;font&gt; (possible attributes are: color, (hex color code), face, (arial, times, courier, helvetica, symbol)).';
+$string['customtext_help'] = 'If you want the certificate to print different names for the instructor than those who are assigned
+the role of instructor, do not select Print Instructor or any signature image except for the line image.  Enter the instructor names in this text box as you would like them to appear.  By default, this text is placed in the lower left of the certificate. The following html tags are available: &lt;br&gt;, &lt;p&gt;, &lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;img&gt; (src and width (or height) are mandatory), &lt;a&gt; (href is mandatory), &lt;font&gt; (possible attributes are: color, (hex color code), face, (arial, times, courier, helvetica, symbol)).';
+// END UCLA MOD: CCLE-5557
 $string['date'] = 'On';
 $string['datefmt'] = 'Date Format';
 $string['datefmt_help'] = 'Choose a date format to print the date on the certificate. Or, choose the last option to have the date printed in the format of the user\'s chosen language.';
@@ -87,8 +91,12 @@ $string['emailcertificate'] = 'Email';
 $string['emailothers'] = 'Email Others';
 $string['emailothers_help'] = 'Enter the email addresses here, separated by a comma, of those who should be alerted with an email whenever students receive a certificate.';
 $string['emailstudenttext'] = 'Attached is your certificate for {$a->course}.';
-$string['emailteachers'] = 'Email Teachers';
-$string['emailteachers_help'] = 'If enabled, then teachers are alerted with an email whenever students receive a certificate.';
+// START UCLA MOD: CCLE-5557 - Replace usage of teacher
+//$string['emailteachers'] = 'Email Teachers';
+//$string['emailteachers_help'] = 'If enabled, then teachers are alerted with an email whenever students receive a certificate.';
+$string['emailteachers'] = 'Email Instructors';
+$string['emailteachers_help'] = 'If enabled, then instructors are alerted with an email whenever students receive a certificate.';
+// END UCLA MOD: CCLE-5557
 $string['emailteachermail'] = '
 {$a->student} has received their certificate: \'{$a->certificate}\'
 for {$a->course}.
@@ -170,8 +178,12 @@ $string['printseal'] = 'Seal or Logo Image';
 $string['printseal_help'] = 'This option allows you to select a seal or logo to print on the certificate from the certificate/pix/seals folder. By default, this image is placed in the lower right corner of the certificate.';
 $string['printsignature'] = 'Signature Image';
 $string['printsignature_help'] = 'This option allows you to print a signature image from the certificate/pix/signatures folder.  You can print a graphic representation of a signature, or print a line for a written signature. By default, this image is placed in the lower left of the certificate.';
-$string['printteacher'] = 'Print Teacher Name(s)';
-$string['printteacher_help'] = 'For printing the teacher name on the certificate, set the role of teacher at the module level.  Do this if, for example, you have more than one teacher for the course or you have more than one certificate in the course and you want to print different teacher names on each certificate.  Click to edit the certificate, then click on the Locally assigned roles tab.  Then assign the role of Teacher (editing teacher) to the certificate (they do not HAVE to be a teacher in the course--you can assign that role to anyone).  Those names will be printed on the certificate for teacher.';
+// START UCLA MOD: CCLE-5557 - Replace usage of teacher
+//$string['printteacher'] = 'Print Teacher Name(s)';
+//$string['printteacher_help'] = 'For printing the teacher name on the certificate, set the role of teacher at the module level.  Do this if, for example, you have more than one teacher for the course or you have more than one certificate in the course and you want to print different teacher names on each certificate.  Click to edit the certificate, then click on the Locally assigned roles tab.  Then assign the role of Teacher (editing teacher) to the certificate (they do not HAVE to be a teacher in the course--you can assign that role to anyone).  Those names will be printed on the certificate for teacher.';
+$string['printteacher'] = 'Print Instructor Name(s)';
+$string['printteacher_help'] = 'For printing the instructor name on the certificate, set the role of instructor at the module level.  Do this if, for example, you have more than one instructor for the course or you have more than one certificate in the course and you want to print different instructor names on each certificate.  Click to edit the certificate, then click on the Locally assigned roles tab.  Then assign the role of Instructor (editing instructor) to the certificate (they do not HAVE to be a instructor in the course--you can assign that role to anyone).  Those names will be printed on the certificate for instructor.';
+// END UCLA MOD: CCLE-5557
 $string['printwmark'] = 'Watermark Image';
 $string['printwmark_help'] = 'A watermark file can be placed in the background of the certificate. A watermark is a faded graphic. A watermark could be a logo, seal, crest, wording, or whatever you want to use as a graphic background.';
 $string['receivedcerts'] = 'Received certificates';
